@@ -64,6 +64,8 @@ export const MenuButton = styled.button`
         }
         padding-left: 17px;
         padding-right: 17px;
+
+        size-adjust: initial;
     }
 
     padding: 8.25px 0;
