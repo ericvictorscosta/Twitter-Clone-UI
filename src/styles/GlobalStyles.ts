@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components"
 
 export const GlobalStyle = createGlobalStyle`
     * {
@@ -34,5 +34,6 @@ export const GlobalStyle = createGlobalStyle`
     --twitter: #33A1F2;
     --twitter-dark-hover: #011017;
     --twitter-light-hover: #2C8ED6;
+    --twitter-icon: rgb(214, 217, 219);
     }
-`;
+`

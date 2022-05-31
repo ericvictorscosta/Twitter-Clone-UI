@@ -1,16 +1,18 @@
 export {
+    Email,
     Home,
     Notifications,
-    Email,
     FavoriteBorder,
     ExitToApp,
     LocationOn,
-    Search,
 } from "styled-icons/material-outlined"
 
 export { LockClosed } from "styled-icons/zondicons"
 export { Person, Cake, Favorite } from "styled-icons/material"
 export { ArrowLeft } from "styled-icons/heroicons-solid"
 export { User } from "styled-icons/boxicons-solid"
-export { Comment, Retweet } from "styled-icons/evil"
-
+export { Comment, Retweet, Search } from "styled-icons/evil"
+export { HomeCircle } from "styled-icons/boxicons-solid"
+export { Twitter } from "styled-icons/boxicons-logos"
+export { Hash } from "styled-icons/bootstrap"
+export { Exit } from "styled-icons/boxicons-regular"

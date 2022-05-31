@@ -1,12 +1,15 @@
 import styled, { css } from "styled-components"
 import {
-    Home,
+    HomeCircle,
     Notifications,
+    Hash,
     Email,
     FavoriteBorder,
     Person,
-    ExitToApp,
+    Twitter,
+    Exit,
 } from "../../styles/icons"
+
 export const Container = styled.div`
     display: none;
 
@@ -35,15 +38,24 @@ export const Topside = styled.div`
         align-items: flex-start;
     }
 `
-export const Logo = styled.div`
-    width: 41px;
-    height: 41px;
+export const BorderLog = styled.div`
+    padding: 10px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+
+    &:hover {
+        background: rgba(29, 155, 240, 0.1);
+    }
+`
+
+export const Logo = styled(Twitter)`
+    width: 40px;
+    height: 40px;
 
     > path {
-        fill: var(--twitter);
+        fill: var(--twitter-icon);
+        cursor: pointer;
     }
-
-    margin-bottom: 20px;
 `
 export const MenuButton = styled.button`
     display: flex;
@@ -55,17 +67,19 @@ export const MenuButton = styled.button`
     }
 
     @media (min-width: 1280px) {
-        > span {
-            display: inline;
-            margin-left: 19px;
-
-            font-weight: bold;
-            font-size: 19px;
-        }
         padding-left: 17px;
         padding-right: 17px;
 
         size-adjust: initial;
+        .span_home {
+            font-weight: bold;
+        }
+        span {
+            display: inline;
+            margin-left: 19px;
+            font-weight: 400;
+            font-size: 19px;
+        }
     }
 
     padding: 8.25px 0;
@@ -118,7 +132,10 @@ const iconCSS = css`
     color: var(--white);
 `
 
-export const HomeIcon = styled(Home)`
+export const HomeIcon = styled(HomeCircle)`
+    ${iconCSS}
+`
+export const ExploreIcon = styled(Hash)`
     ${iconCSS}
 `
 export const BellIcon = styled(Notifications)`
@@ -132,4 +149,52 @@ export const FavoriteIcon = styled(FavoriteBorder)`
 `
 export const ProfileIcon = styled(Person)`
     ${iconCSS}
+`
+export const Botside = styled.div`
+    margin-top: 20px;
+
+    display: flex;
+    align-items: center;
+`
+export const Avatar = styled.div`
+    width: 39px;
+    height: 39px;
+
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: var(--gray);
+`
+export const ProfileData = styled.div`
+    display: none;
+
+    @media (min-width: 1280px) {
+        display: flex;
+        flex-direction: column;
+
+        margin-left: 10px;
+        font-size: 14px;
+
+        > span {
+            color: var(--gray);
+        }
+    } ;
+`
+export const ExitApp = styled(Exit)`
+    display: none;
+
+    @media (min-width: 1280px) {
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+
+        color: var(--white);
+        margin-left: 30px;
+        cursor: pointer;
+
+        &:hover {
+            > path {
+                color: var(--like);
+            }
+        }
+    } ;
 `
