@@ -6,7 +6,7 @@ export const News: React.FC = () => {
     return (
         <Container>
             <span>Assuntos do momento no Brasil</span>
-            <strong>Vagas Desenvolvedor Frontend</strong>
+            <strong>reactjs engineer</strong>
         </Container>
     )
 }
